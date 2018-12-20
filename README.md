@@ -10,10 +10,11 @@ This first part, detailed in [this notebook](notebook_section1), motivates the u
 
 ## 2. Typical use cases in high energy physics
 
-This second part, detailed in [this notebook](GenericNumpyForHEP.ipynb), presents few typical standard computations in HEP based on multi-dimensional data using `numpy`. The playground here is a sample of 1.5 million random "observations", each made of ten 3D vectors $(r_{0}, ..., r_{9})$ with $r_{i}=(x,y,z)$. One can think of ten positions in space or ten light RGB colors. First, the concept presented in the introduction are used with this `ndarray`, and then more complex computations are discussed such as:
-   + distances between all $(r_{i}, r{j})$ pairs
-   + distribution of $|r_{i}|^2$ for only few selected $r$ among the 10 $r_{i}$ (defined)
-   + 
+This second part, detailed in [this notebook](GenericNumpyForHEP.ipynb), presents few typical standard computations in HEP based on multi-dimensional data using `numpy`. The playground here is a sample of 1.5 million random "observations", each made of ten 3D vectors (r0, ..., r9) with ri=(x,y,z). One can think of ten positions in space or ten light RGB colors. First, the concept presented in the introduction are used with this `ndarray`, and then more complex computations are discussed such as:
+  + combinatorics over the collection of 10 ri's 
+  + distances between all (ri, rj) pairs
+  + distribution of |ri|^2 for only few selected r among the 10 ri ( with a criteria to be defined)
+  + compute an arbitrary function of ri over just a few selected point among the 10.
 
 
 ## 3. Limitations and possibles workarounds
