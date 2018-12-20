@@ -10,7 +10,7 @@ This first part, detailed in [this notebook](notebook_section1), motivates the u
 
 ## 2. Typical use cases in high energy physics
 
-This second part, detailed in [this notebook](GenericNumpyForHEP.ipynb), presents few typical standard computations in HEP based on multi-dimensional data using `numpy`. The playground here is a sample of 1 million random "observations", each made of ten 3D vectors (r0, ..., r9) with ri=(x,y,z). One can think of ten positions in space or ten RGB colors. First, the concept presented in the introduction are used with this `ndarray`, and then more complex computations are discussed such as. A [notebook](GenericNumpyForHEP_exercise.ipynb) with exercice to practice these concepts is also available. Typical computations include:
+This second part, detailed in [this notebook](GenericNumpyForHEP.ipynb), presents few typical standard computations in HEP based on multi-dimensional data using `numpy`. The playground here is a sample of 1 million random "observations", each made of ten 3D vectors (r0, ..., r9) with ri=(x,y,z). One can think of ten positions in space or ten RGB colors. First, the concept presented in the introduction are used with this `ndarray`, and then more complex computations are discussed such as. A [notebook with exercices](GenericNumpyForHEP_exercise.ipynb) to practice these concepts is also available. Typical computations include:
   + combinatorics over the collection of 10 ri's
   + distances between all (ri, rj) pairs
   + distribution of |ri|^2 for only few selected r among the 10 ri ( with a criteria to be defined)
