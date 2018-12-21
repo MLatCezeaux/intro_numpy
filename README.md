@@ -5,7 +5,7 @@ This repository hosts the material of a tutorial to `numpy` in the context of a 
 
 ## 1. Introduction to `numpy`
 
-This first part, detailed in [this notebook](notebook_section1), motivates the use of `numpy` inside python and, also, why it is interesting to use python! The basic `numpy` object, `numpy.array`, is introduced emphasizing differences with usual python lists. Then the three key concepts on which `numpy` is based are presented (broadcasting, indexing/slicing, vectorization) and simple examples are given to illustrate each of them (in particular, how to get ride of *loops*). Finally, a quick tour of two important tools interfaced with `numpy` is given, namely `pandas` (*database-like* objet) and `matplotlib` (plotting package).
+This first part, detailed in [this notebook](section1/NumpyIntroduction.ipynb), motivates the use of `numpy` inside python and, also, why it is interesting to use python! The basic `numpy` object, `numpy.array`, is introduced emphasizing differences with usual python lists. Then the three key concepts on which `numpy` is based are presented (broadcasting, indexing/slicing, vectorization) and simple examples are given to illustrate each of them (in particular, how to get ride of *loops*). Finally, a quick tour of two important tools interfaced with `numpy` is given, namely `pandas` (*database-like* objet) and `matplotlib` (plotting package).
 
 
 ## 2. Typical use cases in high energy physics
