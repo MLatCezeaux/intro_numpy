@@ -261,7 +261,7 @@ def square_jagged_2Darray(a, **kwargs):
     if (dtype):
         dt = dtype
     else:
-        dt = data.dtype
+        dt = a.dtype
     out = np.zeros(mask.shape, dtype=dt)
     out.fill(val)
     out[mask] = np.concatenate(a)
