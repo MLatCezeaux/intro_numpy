@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# The templates used in this script are available at
+#  --> https://github.com/rmadar/pandoc-utils
+
 if [ $# -ne 2 ]; then
     echo ""
     echo "Script usage: "
