@@ -1,6 +1,6 @@
 # Tutorial `numpy` for ML@LPC
 
-This repository hosts the material of a tutorial to `numpy` in the context of a working group at [Laboratoire de Physique de Clermont](http://clrwww.in2p3.fr/) related to machine learning and its application in (high energy) physics. This tutorial is split into three parts, trying go from first principles to current (known) limitations for High Energy Physics (HEP).
+This repository hosts the material of a tutorial to `numpy` in the context of a working group at [Laboratoire de Physique de Clermont](http://clrwww.in2p3.fr/) related to machine learning and its application in (high energy) physics. This tutorial is split into three parts, trying go from first principles to current (known) limitations for High Energy Physics (HEP). A [PDF document](documentation/NumpyIntroduction_MLatLPC.pdf) containing the notes of this tutorial is also available in this repository.
 
 
 ## 1. Introduction to `numpy`
@@ -18,3 +18,7 @@ This second part, detailed in [this notebook](section2/GenericNumpyForHEP.ipynb)
 
 
 ## 3. Limitations and possibles workarounds
+
+This third part, detailed in [this notebook](section3/CollisionAnalysis.ipynb), presents a realistic study of
+collider data using the concept presented in the two first sections. In particular, the notion of jagged array
+is introduced and the associated limitation in numpy is mitigated using a [module of numpy utils for HEP](np_utils.py). Few concreted cases are treated to illustrate these utils.
