@@ -1,13 +1,22 @@
+'''
+------------------------------------------------------
+np_utils.py (Jan 2019, romain.madar@clermont.in2p3.fr)
+------------------------------------------------------
+
+ This python module is basically a wrapper of functions to improve
+ the use of numpy arrays for variable-size arrays. The main functions
+ allow to turn variable-size arrays into constant-size arrays, or to
+ perform combinatorics without explicit loops (like pairing).
+
+ These util functions were designed with HEP collider physics analysis
+ in mind.
+ 
+'''
+
+
 import numpy as np
 import itertools
 import copy
-
-# TODO
-# ====
-# Parallelize the functions
-#  - square_jagged_2Darray()
-#  - df2array()
-#  - make_all_pairs_nd()
 
 
 def count_nonnan(a, axis=-1):
