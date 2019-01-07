@@ -2,9 +2,9 @@ import os
 import jupy_pandoc_utils as jpu
 
 notebook_list = [
-    '../section1/NumpyIntroduction.ipynb',
-    '../section2/GenericNumpyForHEP.ipynb',
-    '../section3/CollisionAnalysis.ipynb',
+    '../lecture/1-NumpyIntroduction.ipynb',
+    '../lecture/2-GenericNumpyForHEP.ipynb',
+    '../lecture/3-CollisionAnalysis.ipynb',
 ]
 
 # Copy the notebooks
@@ -15,7 +15,7 @@ for nb in notebook_list:
 # Convert into markdown
 nb_to_be_concat = []
 for nb in notebook_list:
-    nb_name = nb.replace('../section1/', '').replace('../section2/', '').replace('../section3/', '')
+    nb_name = nb.replace('../lecture/', '')
     md_name = nb_name.replace('.ipynb', '.md')    
     jpu.nb2md(nb_name)
 
