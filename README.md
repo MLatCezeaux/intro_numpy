@@ -5,15 +5,6 @@ This repository hosts the material of a tutorial to `numpy` in the context of a 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/MLatCezeaux/intro_numpy/master)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/MLatCezeaux/intro_numpy)
 
-### To execute notebooks into colab
-
-   1. Upload files (data or module): open the left panel, go to tap `Files` and go to `Upload`
-   2. Import local module: the normal `import my_module` will not work and you need to import the file as follow (after uploading the my_module.py file):
-```python
-from importlib.machinery import SourceFileLoader
-module = SourceFileLoader('my_module', 'my_module.py').load_module()
-help(module)
-```
 
 ## 1. Introduction to `numpy`
 
@@ -33,4 +24,16 @@ This second part, detailed in [this notebook](section2/GenericNumpyForHEP.ipynb)
 
 This third part, detailed in [this notebook](section3/CollisionAnalysis.ipynb), presents a realistic study of
 collider data using the concept presented in the two first sections. In particular, the notion of jagged array
-is introduced and the associated limitation in numpy is mitigated using a [module of numpy utils for HEP](np_utils.py). Few concreted cases are treated (such as computing invariant masses, finding the closest jet of the less isolated lepton) in order to illustrate how to use numpy for realistic event-by-event computation without explicit for loops. 
+is introduced and the associated limitation in numpy is mitigated using a [module of numpy utils for HEP](np_utils.py). Few concreted cases are treated (such as computing invariant masses, finding the closest jet of the less isolated lepton) in order to illustrate how to use numpy for realistic event-by-event computation without explicit for loops.
+
+
+
+### Instructions To execute notebooks into colab
+
+   1. Upload files (data or module): open the left panel, go to tap `Files` and go to `Upload`
+   2. Import local module: the normal `import my_module` will not work and you need to import the file as follow (after uploading the my_module.py file):
+```python
+from importlib.machinery import SourceFileLoader
+module = SourceFileLoader('my_module', 'my_module.py').load_module()
+help(module)
+```
