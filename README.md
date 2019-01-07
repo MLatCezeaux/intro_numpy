@@ -26,7 +26,7 @@ This third part, detailed in [this notebook](section3/CollisionAnalysis.ipynb), 
 collider data using the concept presented in the two first sections. In particular, the notion of jagged array
 is introduced and the associated limitation in numpy is mitigated using a [module of numpy utils for HEP](np_utils.py). Few concreted cases are treated (such as computing invariant masses, finding the closest jet of the less isolated lepton) in order to illustrate how to use numpy for realistic event-by-event computation without explicit for loops.
 
-
+---
 
 ### Instructions To execute notebooks into colab
 
