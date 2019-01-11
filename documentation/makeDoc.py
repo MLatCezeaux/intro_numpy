@@ -30,8 +30,11 @@ for nb in notebook_list:
 
 
 # Make the full pdf
-os.system('./makePDF.sh "title.md ' + ' '.join(nb_to_be_concat) + '" NumpyIntroduction_MLatLPC.pdf')
+print('\nExecute this command:')
+print('./makePDF.sh "title.md ' + ' '.join(nb_to_be_concat) + '" NumpyIntroduction_MLatLPC.pdf')
 
+# os.system('./makePDF.sh "title.md ' + ' '.join(nb_to_be_concat) + '" NumpyIntroduction_MLatLPC.pdf')
+# --> this doesn't produce the end of the PDF - I don't know why.
 
 # Clean
 os.system('rm -rf *.ipynb')
