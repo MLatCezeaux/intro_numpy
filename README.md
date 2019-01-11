@@ -31,9 +31,8 @@ is introduced and the associated limitation in numpy is mitigated using few [fun
 
 #### Instructions to run notebooks into colab
 
-   **+ Upload files data or module:** open the left panel (small gray arrow), go to tab `Files` and go to `Upload`
-
-   **+ Import local module:** the normal `import my_module` will not work and you need to import the file as follow (after uploading the `my_module.py` file):
+   1. **Upload files data or module:** open the left panel (small gray arrow), go to tab `Files` and go to `Upload`
+   2. **Import local module:** the normal `import my_module` will not work and you need to import the file as follow (after uploading the `my_module.py` file):
 ```python
 from importlib.machinery import SourceFileLoader
 module = SourceFileLoader('my_module', 'my_module.py').load_module()
