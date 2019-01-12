@@ -36,5 +36,5 @@ is introduced and the associated limitation in numpy is mitigated using few [fun
 ```python
 from importlib.machinery import SourceFileLoader
 module = SourceFileLoader('my_module', 'my_module.py').load_module()
-help(module)
 ```
+After this, the command `help(module)` or `module.function` will work in the notebook.
