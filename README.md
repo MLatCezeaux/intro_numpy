@@ -1,14 +1,15 @@
 # NumPy tutorial for ML@LPC
 
-This repository hosts the material of a tutorial to NumPy in the context of a working group at [Laboratoire de Physique de Clermont](http://clrwww.in2p3.fr/) related to machine learning and its application in (high energy) physics. This tutorial is split into three parts, trying go from first principles to current (known) limitations for High Energy Physics (HEP). A [PDF document](documentation/NumpyIntroduction_MLatLPC.pdf) containing the notes of this tutorial is also available in this repository. All notebooks can be ran in a browser using both [mybinder](https://mybinder.org/) (issue of dead kernel though) and [google Colaboratory](https://colab.research.google.com/notebooks/welcome.ipynb) (requires chrome and a google account):
+This repository hosts the material of a tutorial to NumPy in the context of a working group at [Laboratoire de Physique de Clermont](http://clrwww.in2p3.fr/) related to machine learning and its application in (high energy) physics. This tutorial is split into three parts, trying go from first principles to current (known) limitations for High Energy Physics (HEP). A [PDF document](documentation/NumpyIntroduction_MLatLPC.pdf) containing the notes of this tutorial is also available in this repository. All notebooks can be ran in a browser using both [mybinder](https://mybinder.org/) (issue of dead kernel though) and [google Colaboratory](https://colab.research.google.com/notebooks/welcome.ipynb) (requires chrome and a google account).
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/MLatCezeaux/intro_numpy/master)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/MLatCezeaux/intro_numpy)
 
+**Contact:** [romain.madar@cern.ch](mailto:romain.madar@cern.ch)
 
 ## 1. Introduction to NumPy
 
-This first part, detailed in [this notebook](lecture/1-NumpyIntroduction.ipynb), motivates the use of NumPy inside python and, also, why it is interesting to use python! The basic NumPy object, `numpy.array`, is introduced emphasizing differences with usual python lists. Then the three key concepts on which NumPy is based are presented (broadcasting, indexing/slicing, vectorization) and simple examples are given to illustrate each of them (in particular, how to get ride of *loops*). Finally, a quick tour of two important tools interfaced with NumPy is given, namely `pandas` (*database-like* objet) and `matplotlib` (plotting package). A [notebook with exercises](exercises/1-NumpyIntroExercise.ipynb)  is proposed to quickly practice these concepts using a electric pulse analysis.
+This first part, detailed in [this notebook](lecture/1-NumpyIntroduction.ipynb), motivates the use of NumPy inside python and, also, why it is interesting to use python! The basic NumPy object, `numpy.array`, is introduced emphasizing differences with usual python lists. Then the three key concepts on which NumPy is based are presented (broadcasting, indexing/slicing, vectorization) and simple examples are given to illustrate each of them (in particular, how to get ride of *loops*). Finally, a quick tour of two important tools interfaced with NumPy is given, namely `pandas` (*database-like* objet), `matplotlib` (plotting package) and a very tiny glimps of `scipy` (scientific python). A [notebook with exercises](exercises/1-NumpyIntroExercise.ipynb)  is proposed to quickly practice these concepts using a electric pulse analysis.
 
 
 ## 2. Typical use cases in high energy physics
@@ -31,10 +32,10 @@ is introduced and the associated limitation in numpy is mitigated using few [fun
 
 #### Instructions to run notebooks into colab
 
-   1. Upload files data or module: open the left panel (small gray arrow), go to tab `Files` and go to `Upload`
-   2. Import local module: the normal `import my_module` will not work and you need to import the file as follow (after uploading the `my_module.py` file):
+   1. *Upload files (data or code):* open the left panel (small gray arrow), go to tab `Files` and go to `Upload`
+   2. *Import local module:* the normal `import my_module` will not work and you need to import the file as follow (after uploading the `my_module.py` file):
 ```python
 from importlib.machinery import SourceFileLoader
 module = SourceFileLoader('my_module', 'my_module.py').load_module()
-help(module)
 ```
+After this, the command `help(module)` or `module.function` will work in the notebook.
