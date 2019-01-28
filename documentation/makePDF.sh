@@ -20,8 +20,11 @@ pandoc -N -s ${PANDOC_TEMPLATES}/cross_references.yaml ${1} -o ${2}\
        -V linestretch="1.2" -V fontsize="11pt" -V documentclass="article"\
        --highlight-style tango\
        --toc --toc-depth=2 -V fancypage\
-       -V display-abstract
-#       -V fontfamily="gillius" -V fontoption="default"
+       -V display-abstract\
+       -V fontfamily="sourcesanspro", -V fontoption="default" -V sans-serif
+#       -V fontfamily="txfonts" -V fontoption="varg"
+#       -V fontfamily="cmbright" -V sans-serif
+#       -V fontfamily="gillius" -V fontoption="default" -V sans-serif\
 #       -V fontfamily="lmodern"
 #       -V fontfamily="sansmathfonts"
 #       -V fontfamily="sourceserifpro" -V fontoption="default"  
