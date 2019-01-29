@@ -1,4 +1,4 @@
-# Concluding comments
+# Conclusion and perspectives {-}
 
 It is clear that NumPy allows to perform very sophisticated calculation on multi-dimensional data, in a very consise piece of code and rather efficiently. These are clearly strong points in favour of using of NumPy, together with the large collection of tools which come along. All these tools form a very handy and powerful ecosystem for a lot of studies that can be performed in data analysis and numerical computation fields.
 

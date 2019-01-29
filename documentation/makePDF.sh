@@ -11,27 +11,68 @@ if [ $# -ne 2 ]; then
     exit 1
 fi
 
+
+# Font selection for PDF creation via LaTeX
+# =========================================
+#font="txfonts"
+#fontoption="varg"
+#addoption="-V "
+#fontsize="10"
+
+font="sourcesanspro"
+fontoption="default"
+addoption="-V sans-serif"
+fontsize="10"
+
+#font="cmbright"
+#fontoption=""
+#addoption="-V sans-serif"
+#fontsize="10"
+
+#font="gillius"
+#fontoption="default"
+#addoption="-V sans-serif"
+#fontsize="10"
+
+#font="lmodern"
+#fontoption=""
+#addoption=""
+#fontsize="10"
+
+#font="sourceserifpro"
+#fontoption="default"
+#addoption=""
+#fontsize="10"
+
+#font="merriweather"
+#fontoption="light"
+#addoption=""
+#fontsize="10"
+
+#font="CrimsonPro"
+#fontoption=""
+#addoption=""
+#fontsize="11"
+
+#font="ebgaramond"
+#fontoption=""
+#addoption=""
+#fontsize="10"
+
+
 # PDF via latex
 pandoc -N -s ${PANDOC_TEMPLATES}/cross_references.yaml ${1} -o ${2}\
        --template ${PANDOC_TEMPLATES}/document_template.tex \
        --filter ${PANDOC_FILTERS}/pandoc-crossref\
        --filter pandoc-citeproc\
        --variable geometry="a4paper, total={6in,9in}"\
-       -V linestretch="1.2" -V fontsize="10pt" -V documentclass="article"\
+       -V linestretch="1.2" -V fontsize=${fontsize} -V documentclass="report"\
        --highlight-style tango\
        --toc --toc-depth=2 -V fancypage\
-       -V display-abstract\
-       -V fontfamily="sourcesanspro", -V fontoption="default" -V sans-serif
-#       -V fontfamily="txfonts" -V fontoption="varg"
-#       -V fontfamily="cmbright" -V sans-serif
-#       -V fontfamily="gillius" -V fontoption="default" -V sans-serif\
-#       -V fontfamily="lmodern"
-#       -V fontfamily="sansmathfonts"
-#       -V fontfamily="sourceserifpro" -V fontoption="default"  
-#       -V fontfamily="merriweather" -V fontoption="light"  
-#       -V fontfamily="CrimsonPro"
-#       -V fontfamily="ebgaramond"
+       -V fontfamily="${font}" -V fontoption="${fontoption}" ${addoption}
+#       -V display-abstract\
 
+	  
 # Make HTML
 pandoc -N -s ${PANDOC_TEMPLATES}/cross_references.yaml ${1} -o ${2}.html\
        --mathjax --css ${PANDOC_TEMPLATES}/webstyle_template.css\
