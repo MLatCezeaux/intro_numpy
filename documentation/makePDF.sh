@@ -66,7 +66,7 @@ pandoc -N -s ${PANDOC_TEMPLATES}/cross_references.yaml ${1} -o ${2}\
        --filter ${PANDOC_FILTERS}/pandoc-crossref\
        --filter pandoc-citeproc\
        --variable geometry="a4paper, top=3.2cm, bottom=3.2cm, left=2.7cm, right=2.7cm"\
-       -V linestretch="1.2" -V fontsize=${fontsize} -V documentclass="report"\
+       -V linestretch="1.2" -V fontsize=${fontsize} -V documentclass="book"\
        --highlight-style tango\
        --toc --toc-depth=2 -V fancypage\
        -V fontfamily="${font}" -V fontoption="${fontoption}" ${addoption}
