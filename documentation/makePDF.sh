@@ -65,16 +65,16 @@ pandoc -N -s ${PANDOC_TEMPLATES}/cross_references.yaml ${1} -o ${2}\
        --template ${PANDOC_TEMPLATES}/document_template.tex \
        --filter ${PANDOC_FILTERS}/pandoc-crossref\
        --filter pandoc-citeproc\
-       --variable geometry="a4paper, total={6in,9in}"\
+       --variable geometry="a4paper, top=3.2cm, bottom=3.2cm, left=2.7cm, right=2.7cm"\
        -V linestretch="1.2" -V fontsize=${fontsize} -V documentclass="report"\
        --highlight-style tango\
        --toc --toc-depth=2 -V fancypage\
        -V fontfamily="${font}" -V fontoption="${fontoption}" ${addoption}
-#       -V display-abstract\
 
 	  
 # Make HTML
 pandoc -N -s ${PANDOC_TEMPLATES}/cross_references.yaml ${1} -o ${2}.html\
        --mathjax --css ${PANDOC_TEMPLATES}/webstyle_template.css\
        --filter pandoc-crossref --filter pandoc-citeproc\
-       --csl ${PANDOC_TEMPLATES}/biblio_style.csl
+       --csl ${PANDOC_TEMPLATES}/biblio_style.csl\
+       --highlight-style tango
