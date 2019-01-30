@@ -16,8 +16,6 @@ fontoption: "default"
 sans-serif: true
 fontsize: "10pt"
 fancypage: true
-...
-
 
 
 #=========================================
@@ -67,4 +65,6 @@ fancypage: true
 #fontoption=""
 #addoption=""
 #fontsize="10"
+
+...
 
