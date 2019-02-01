@@ -31,9 +31,9 @@ for nb in notebook_list:
 
 # Make the full pdf
 print('\nExecute this command:')
-print('./makePDF.sh "title.md Preamble.md ' + ' '.join(nb_to_be_concat) + ' Conclusion.md" NumpyIntroduction_MLatLPC.pdf')
+print('./makePDF.sh "title.yaml Preamble.md ' + ' '.join(nb_to_be_concat) + ' Conclusion.md" NumpyIntroduction_MLatLPC.pdf')
 
-# os.system('./makePDF.sh "title.md Preamble.md ' + ' '.join(nb_to_be_concat) + '" NumpyIntroduction_MLatLPC.pdf')
+# os.system('./makePDF.sh "title.yaml Preamble.md ' + ' '.join(nb_to_be_concat) + '" NumpyIntroduction_MLatLPC.pdf')
 # --> this doesn't produce the end of the PDF - I don't know why.
 
 # Clean
